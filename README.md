@@ -17,7 +17,7 @@ You must have the environment variable
 SLACK_SECRET=
 
 ## Running the application
-Simple execute `php artisan slack-me`
+Simply execute `php artisan slack-me`
 
 ## Deploying the application
 This application can be deployed to any environment that has PHP 8.2 CLI
