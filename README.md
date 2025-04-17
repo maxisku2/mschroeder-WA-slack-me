@@ -10,7 +10,7 @@ This project runs a php script that slacks me a reminder to walk my dog
 `composer install --no-interaction --prefer-dist`
 
 ## Running Tests
-Once built, run `./vendor/bin/phpunit` to test the application
+Once built, run `php artisan test --testdox` to test the application
 
 ## IMPORTANT
 You must have the environment variable
