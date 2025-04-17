@@ -7,7 +7,11 @@ This project runs a php script that slacks me a reminder to walk my dog
 - Composer 2 is required to build
 - From the root code directory, run
 
-`composer install --no-interaction --prefer-dist`
+```
+composer install --no-interaction --prefer-dist
+cp .env.example .env
+php artisan key:generate
+```
 
 ## Running Tests
 Once built, run `php artisan test --testdox` to test the application
