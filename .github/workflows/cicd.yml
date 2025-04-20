@@ -1,4 +1,4 @@
-name: Laravel Slack Reminder CI/CD
+name: Max Schroeder - Slack-Me CI/CD
 
 on:
   workflow_dispatch:
