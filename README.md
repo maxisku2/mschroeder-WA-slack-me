@@ -7,7 +7,7 @@ All Laravel app files are inside `Slack-Me/`. The CI/CD pipeline and Docker buil
 ## 🛠 Prerequisites
 
 - Docker installed locally
-- GitHub repo from https://github.com/rickshawhobo/rz-sl-me
+- GitHub repo from https://github.com/maxisku2/mschroeder-WA-slack-me
 - DockerHub account
 
 ---
@@ -34,16 +34,32 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-### Running the Docker Image ###
-- To test this Docker Image locally, set SLACK_SECRET as a secret Environmental Variable.
+---
 
+## Running the Docker Image ###
+
+### Local ###
 ```bash
 export SLACK_SECRET=iamasecretvalue
 docker build -t mschroeder-wa-slack-me .
 docker run -e SLACK_SECRET mschroeder-wa-slack-me
 ```
 
-- Once published, run the production image from DockerHub:
+### Docker Hub ###
 ```bash
+export SLACK_SECRET=iamasecretvalue
 docker run -e SLACK_SECRET metaldev/mschroeder-wa-slack-me:latest
 ```
+
+--- 
+
+## Testing ##
+
+- [Github Repo](https://github.com/maxisku2/mschroeder-WA-slack-me)
+- [CI/CD pipeline](https://github.com/maxisku2/mschroeder-WA-slack-me/actions/workflows/cicd.yml)
+
+---
+
+## Change Log ##
+
+- 4/20/25 - Initial documentation built
