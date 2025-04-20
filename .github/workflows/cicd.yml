@@ -11,7 +11,7 @@ env:
 
 jobs:
   build-and-test:
-    name: Build & Test Laravel App
+    name: Build & Test Slack-Me App
     runs-on: ubuntu-latest
 
     defaults:

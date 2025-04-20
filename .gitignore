@@ -1,6 +1,5 @@
 # Ignore secrets and env files
 .env
-.env.*
 .env.secret
 
 # Ignore IDE/editor-specific files
