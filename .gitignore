@@ -1,23 +1,37 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
+# Ignore secrets and env files
 .env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-/auth.json
-/.fleet
-/.idea
-/.nova
-/.vscode
-/.zed
+.env.*
+.env.secret
+
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# macOS system files
+.DS_Store
+
+# Backup files
+*~
+*.tmp
+
+# Ignore Laravel vendor if built here (not typical)
+vendor/
+
+# Ignore Composer lock in root if mistakenly created
+composer.lock
+
+# Ignore Docker-related temp files
+Dockerfile~
+*.log
+
+# Node if accidentally added
+node_modules/
+
+# Ignore zip/package output
+*.zip
+*.tar.gz
+dist/

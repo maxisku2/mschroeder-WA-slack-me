@@ -1,0 +1,8 @@
+# Ignore everything not needed in Docker build
+.git
+.gitignore
+.env*
+.env.secret
+*.log
+Dockerfile~
+INSTRUCTIONS.md
