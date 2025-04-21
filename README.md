@@ -60,7 +60,7 @@ set +o allexport
 ### Local ###
 
 ```bash
-# from the MSCHROEDER-WA-SLACK-ME directory
+# from the mschroeder-WA-slack-me directory
 docker build -t mschroeder-wa-slack-me .
 docker run -e SLACK_SECRET=$SLACK_SECRET mschroeder-wa-slack-me
 ```
