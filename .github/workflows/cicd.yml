@@ -27,11 +27,9 @@ jobs:
         with:
           php-version: '8.2'
 
-      - name: Install dependencies
-        run: composer install --no-interaction --prefer-dist
-
-      - name: Set up .env and key
+      - name: Build Application
         run: |
+          composer install --no-interaction --prefer-dist
           cp .env.example .env
           php artisan key:generate
 

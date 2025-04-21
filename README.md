@@ -1,4 +1,4 @@
-# Laravel Slack Reminder - CI/CD Pipeline Instructions
+# Slack Reminder - CI/CD Pipeline and Docker Instructions
 
 ## 📁 Project Structure
 
@@ -25,10 +25,13 @@ All Laravel app files are inside `Slack-Me/`. The CI/CD pipeline and Docker buil
 ## 🧪 Run the Pipeline
 
 ### 🔄 Manual Trigger (Build + Test only)
+
 - Go to **Actions tab** on GitHub
+- Go to the **Max Schroeder - Slack-Me CI/CD** Action 
 - Click **"Run workflow"**
 
 ### 🏷 Tag Push (Full CI/CD)
+
 ```bash
 git tag v1.0.0
 git push origin v1.0.0
@@ -38,23 +41,39 @@ git push origin v1.0.0
 
 ## Running the Docker Image ###
 
-### Local ###
+### Securely set SLACK_SECRET variable ###
+
+1. Create a .env file with the following entry in your current working directory
+
 ```bash
-export SLACK_SECRET=<secret_value>
+SLACK_SECRET=your-secret-value
+```
+
+2. Export all variables found within .env into shell as Environment variables
+
+```bash
+set -o allexport
+source .env
+set +o allexport
+```
+
+### Local ###
+
+```bash
+# from the MSCHROEDER-WA-SLACK-ME directory
 docker build -t mschroeder-wa-slack-me .
-docker run -e SLACK_SECRET mschroeder-wa-slack-me
+docker run -e SLACK_SECRET=$SLACK_SECRET mschroeder-wa-slack-me
 ```
 
 ### Docker Hub ###
+
 ```bash
-export SLACK_SECRET=<secret_value>
-docker run -e SLACK_SECRET metaldev/mschroeder-wa-slack-me:latest
+docker run -e SLACK_SECRET=$SLACK_SECRET metaldev/mschroeder-wa-slack-me:latest
 ```
 
 --- 
 
 ## Testing ##
-
 - [Github Repo](https://github.com/maxisku2/mschroeder-WA-slack-me)
 - [CI/CD pipelines](https://github.com/maxisku2/mschroeder-WA-slack-me/actions/workflows/cicd.yml)
   - [Manual pipeline run](https://github.com/maxisku2/mschroeder-WA-slack-me/actions/runs/14562739312)
@@ -64,5 +83,5 @@ docker run -e SLACK_SECRET metaldev/mschroeder-wa-slack-me:latest
 ---
 
 ## Change Log ##
-
 - 4/20/25 - Initial documentation built
+- 4/21/25 - Finished product
