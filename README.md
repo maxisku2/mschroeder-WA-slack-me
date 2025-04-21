@@ -27,7 +27,6 @@ All Laravel app files are inside `Slack-Me/`. The CI/CD pipeline and Docker buil
 ### 🔄 Manual Trigger (Build + Test only)
 
 - Go to **Actions tab** on GitHub
-- Go to the **Max Schroeder - Slack-Me CI/CD** Action 
 - Click **"Run workflow"**
 
 ### 🏷 Tag Push (Full CI/CD)
@@ -41,7 +40,7 @@ git push origin v1.0.0
 
 ## Running the Docker Image ###
 
-### Securely set SLACK_SECRET variable ###
+### Securely set the **SLACK_SECRET** variable ###
 
 1. Create a .env file with the following entry in your current working directory
 
