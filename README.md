@@ -79,7 +79,7 @@ docker run -e SLACK_SECRET=$SLACK_SECRET metaldev/mschroeder-wa-slack-me:latest
   - [Manual pipeline run](https://github.com/maxisku2/mschroeder-WA-slack-me/actions/runs/14562739312)
   - [Pipeline triggered via tags](https://github.com/maxisku2/mschroeder-WA-slack-me/actions/runs/14562806824)
 - [Max Schroeder's DockerHub](https://hub.docker.com/repositories/metaldev)
-  - [Final image link](https://hub.docker.com/repository/docker/metaldev/mschroeder-wa-slack-me/tags/latest/sha256-e50bcc14000165a8ec637177e56e6304b239ab76928f858f739b89b960d9c3a8)
+  - [Final image link](https://hub.docker.com/repository/docker/metaldev/mschroeder-wa-slack-me/tags/latest/sha256-deb44cc5d843ea1d3719a093758b8436ad85aaecf5af857d1a0d58a800b9198d)
 ---
 
 ## Change Log ##
