@@ -40,15 +40,15 @@ git push origin v1.0.0
 
 ## Running the Docker Image ###
 
-### Securely set the **SLACK_SECRET** variable ###
+### Securely set the SLACK_SECRET variable ###
 
-1. Create a .env file with the following entry in your current working directory
+1. In your current working directory, create a **.env** file with the following entry: 
 
 ```bash
 SLACK_SECRET=your-secret-value
 ```
 
-2. Export all variables found within .env into shell as Environment variables
+2. Export all variables found within **.env** into shell Environment variables
 
 ```bash
 set -o allexport
